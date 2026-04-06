@@ -56,8 +56,9 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 40px;
     width: auto;
+    object-fit: contain;
 }
 
 .company-name {
@@ -68,6 +69,7 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 
 .nav-links {
     display: flex;
@@ -99,12 +101,14 @@ body {
 .hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
+    inset: 0;
+    background-image:
+        radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, transparent 35%),
+        url('Logo.png');
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40%, contain;
+    opacity: 0.12;
 }
 
 .hero::after {
