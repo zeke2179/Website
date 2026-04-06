@@ -55,9 +55,13 @@ body {
     gap: 12px;
 }
 
-.logo {
-    height: 50px;
-    width: auto;
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--primary-yellow), var(--primary-orange), var(--primary-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .company-name {
