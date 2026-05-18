@@ -1,6 +1,6 @@
 {
-  "minimum_supported_version": "0.1",
-  "minimum_supported_build": 6,
+  "minimum_supported_version": "1.0.0",
+  "minimum_supported_build": 1,
   "update_url": "",
   "message": "This version is no longer supported. Please update Dugout Comm to continue."
 }
